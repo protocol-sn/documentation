@@ -11,33 +11,8 @@ The plugin manager also tracks the client id and client secret for expected plug
 ### Endpoints
 
  - Register plugin
-   - unsecured
-   - POST
-   - /registerPlugin
-     - request
-       - body
-         - Str - `baseUrl` - base URL of the plugin
-         - Str - `displayName` - Identifier for the plugin intended for end-user recognition
-         - Str - `clientBaseURL` - If a URL should be displayed for a client (e.g. a browser client) put it here
-       - headers
-         - str - `client_id` - unique id for this plugin relative to this node
-         - str - `client_secret` - functionally the plugin's password
-       - response
-         - 200
-         - body
-           - str - `bearerToken` - JWT to be used in future requests
  - Unregister plugin
-   - Requires plugin credentials
-   - DELETE
-   - /unregisterPlugin
-     - request
-       - headers
-         - str - 'authorization' - "Bearer " and bearer token.
  - List plugins
-   - unsecured
-   - GET
-   - /plugins
-     - request
 
 ## Users Plugin
 
