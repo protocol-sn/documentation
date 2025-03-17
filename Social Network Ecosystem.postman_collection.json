@@ -1,0 +1,861 @@
+{
+	"info": {
+		"_postman_id": "a5dc61c1-f06b-4dad-984f-e59e99aa693d",
+		"name": "Social Network Ecosystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5343523"
+	},
+	"item": [
+		{
+			"name": "User Plugin",
+			"item": [
+				{
+					"name": "Add user to group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.0/user-groups/ab2166fb-9b57-4868-80b6-5219b2f5eb7a/group/b79443e2-89d5-429e-9afc-431ba3553084",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.0",
+								"user-groups",
+								"ab2166fb-9b57-4868-80b6-5219b2f5eb7a",
+								"group",
+								"b79443e2-89d5-429e-9afc-431ba3553084"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.0/user-groups/ab2166fb-9b57-4868-80b6-5219b2f5eb7a/group/b79443e2-89d5-429e-9afc-431ba3553084",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.0",
+								"user-groups",
+								"ab2166fb-9b57-4868-80b6-5219b2f5eb7a",
+								"group",
+								"b79443e2-89d5-429e-9afc-431ba3553084"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request verfication",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.0/user-groups/ab2166fb-9b57-4868-80b6-5219b2f5eb7a/group/b79443e2-89d5-429e-9afc-431ba3553084",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.0",
+								"user-groups",
+								"ab2166fb-9b57-4868-80b6-5219b2f5eb7a",
+								"group",
+								"b79443e2-89d5-429e-9afc-431ba3553084"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.6/users/ab2166fb-9b57-4868-80b6-5219b2f5eb7a/",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.6",
+								"users",
+								"ab2166fb-9b57-4868-80b6-5219b2f5eb7a",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "query users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"search\": \"*user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/users/query",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"users",
+								"query"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Default Groups",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.4/user-groups/defaults",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.4",
+								"user-groups",
+								"defaults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query Groups",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.5/user-groups",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.5",
+								"user-groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add group to defaults",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.4/user-groups/defaults/b79443e2-89d5-429e-9afc-431ba3553084",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.4",
+								"user-groups",
+								"defaults",
+								"b79443e2-89d5-429e-9afc-431ba3553084"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add group to defaults Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.4/user-groups/defaults/b79443e2-89d5-429e-9afc-431ba3553084",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.4",
+								"user-groups",
+								"defaults",
+								"b79443e2-89d5-429e-9afc-431ba3553084"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request user verification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.3/users/verify/7c31df97-da69-4302-b9be-e650b4e70b54",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.3",
+								"users",
+								"verify",
+								"7c31df97-da69-4302-b9be-e650b4e70b54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user from group",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{USER_PLUGIN_HOME}}/v0.3.1/user-groups/ab2166fb-9b57-4868-80b6-5219b2f5eb7a/group/b79443e2-89d5-429e-9afc-431ba3553084",
+							"host": [
+								"{{USER_PLUGIN_HOME}}"
+							],
+							"path": [
+								"v0.3.1",
+								"user-groups",
+								"ab2166fb-9b57-4868-80b6-5219b2f5eb7a",
+								"group",
+								"b79443e2-89d5-429e-9afc-431ba3553084"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog Plugin",
+			"item": [
+				{
+					"name": "get blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BLOG_PLUGIN_HOME}}/blog/6a8ad25d-9003-4a24-8cd4-ce372392e125",
+							"host": [
+								"{{BLOG_PLUGIN_HOME}}"
+							],
+							"path": [
+								"blog",
+								"6a8ad25d-9003-4a24-8cd4-ce372392e125"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BLOG_PLUGIN_HOME}}/blog",
+							"host": [
+								"{{BLOG_PLUGIN_HOME}}"
+							],
+							"path": [
+								"blog"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "client login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.collectionVariables.set(\"access_token\", pm.response.json().access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{user_plugin_client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{user_plugin_client_secret}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{realm_host}}/protocol/openid-connect/token",
+					"host": [
+						"{{realm_host}}"
+					],
+					"path": [
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.collectionVariables.set(\"access_token\", pm.response.json().access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scope",
+							"value": "openid profile email offline_access roles",
+							"type": "text"
+						},
+						{
+							"key": "response_type",
+							"value": "code",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "user-plugin",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin-user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "user-plugin-secret",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{realm_host}}/protocol/openid-connect/token",
+					"host": [
+						"{{realm_host}}"
+					],
+					"path": [
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{admin_host}}/users?first=0&max=25",
+					"host": [
+						"{{admin_host}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "first",
+							"value": "0"
+						},
+						{
+							"key": "max",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user's group",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{admin_host}}/users/7c31df97-da69-4302-b9be-e650b4e70b54/groups?briefRepresentation=false",
+					"host": [
+						"{{admin_host}}"
+					],
+					"path": [
+						"users",
+						"7c31df97-da69-4302-b9be-e650b4e70b54",
+						"groups"
+					],
+					"query": [
+						{
+							"key": "briefRepresentation",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query groups",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{admin_host}}/groups?first=0&max=25&populateHierarchy=true&q=default:true&briefRepresentation=true",
+					"host": [
+						"{{admin_host}}"
+					],
+					"path": [
+						"groups"
+					],
+					"query": [
+						{
+							"key": "first",
+							"value": "0"
+						},
+						{
+							"key": "max",
+							"value": "25"
+						},
+						{
+							"key": "populateHierarchy",
+							"value": "true"
+						},
+						{
+							"key": "q",
+							"value": "default:true"
+						},
+						{
+							"key": "briefRepresentation",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{admin_host}}/users?first=0&max=25",
+					"host": [
+						"{{admin_host}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "first",
+							"value": "0"
+						},
+						{
+							"key": "max",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"some-user\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{admin_host}}/users",
+					"host": [
+						"{{admin_host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userinfo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{realm_host}}/protocol/openid-connect/userinfo",
+					"host": [
+						"{{realm_host}}"
+					],
+					"path": [
+						"protocol",
+						"openid-connect",
+						"userinfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token introspection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{realm_host}}/protocol/openid-connect/userinfo",
+					"host": [
+						"{{realm_host}}"
+					],
+					"path": [
+						"protocol",
+						"openid-connect",
+						"userinfo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "KEYCLOAK_HOST",
+			"value": "http://localhost:9080",
+			"type": "string"
+		},
+		{
+			"key": "realm",
+			"value": "social-network-ecosystem",
+			"type": "string"
+		},
+		{
+			"key": "user_plugin_client_id",
+			"value": "user-plugin",
+			"type": "string"
+		},
+		{
+			"key": "user_plugin_client_secret",
+			"value": "user-plugin-secret",
+			"type": "string"
+		},
+		{
+			"key": "realm_host",
+			"value": "{{KEYCLOAK_HOST}}/realms/{{realm}}",
+			"type": "string"
+		},
+		{
+			"key": "access_token",
+			"value": ""
+		},
+		{
+			"key": "admin_host",
+			"value": "{{KEYCLOAK_HOST}}/admin/realms/{{realm}}",
+			"type": "string"
+		},
+		{
+			"key": "USER_PLUGIN_HOME",
+			"value": "http://localhost:8081",
+			"type": "string"
+		},
+		{
+			"key": "BLOG_PLUGIN_HOME",
+			"value": "http://localhost:8082",
+			"type": "string"
+		}
+	]
+}
